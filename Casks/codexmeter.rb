@@ -1,11 +1,11 @@
 cask "codexmeter" do
-  version "1.4.7"
-  sha256 "6e67c5d1e07e0bfc47213cbe2f0ef1f4e0ff8b3f0f9038dc69c169b91581e98b"
+  version "1.4.8"
+  sha256 "aec496525ccf0c2512443bd179f3900fc6ad797265324a7388d282924c350a39"
 
-  url "https://github.com/HechoLP/CodexMeter/releases/download/v#{version}/CodexMeter-#{version}.zip"
+  url "https://github.com/dlfkdLR/CodexMeter/releases/download/v#{version}/CodexMeter-#{version}.zip"
   name "CodexMeter"
   desc "Local Codex and Claude Code token usage in the menu bar"
-  homepage "https://github.com/HechoLP/CodexMeter"
+  homepage "https://github.com/dlfkdLR/CodexMeter"
 
   auto_updates true
   depends_on macos: :sonoma
