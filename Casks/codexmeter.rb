@@ -1,10 +1,10 @@
 cask "codexmeter" do
-  version "1.4.10"
-  sha256 "d94767e8a38e47ca0e03ac13e325c03c7c19212383c823c823a2d2d363173a2a"
+  version "2.0.0"
+  sha256 "1251b9f3f67988f60bc9c1f0fbbd224695149135068bd2a79e7368dd55af7636"
 
   url "https://github.com/dlfkdLR/CodexMeter/releases/download/v#{version}/CodexMeter-#{version}.zip"
   name "CodexMeter"
-  desc "Local Codex and Claude Code token usage in the menu bar"
+  desc "Local Codex and Claude Code token usage in a floating edge notch"
   homepage "https://github.com/dlfkdLR/CodexMeter"
 
   auto_updates true
