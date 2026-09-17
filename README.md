@@ -1,29 +1,43 @@
-# HechoLP Homebrew Tap
+# dlfkdLR Homebrew Tap
 
-Personal Homebrew Tap for public HechoLP macOS app releases.
+## CodeRim
 
-## CodexMeter
+CodeRim shows coding-assistant usage limits in a macOS edge notch, with local
+Codex and Claude token history, a CLI and native widgets. Supports macOS 14 or later.
 
-CodexMeter is a local Codex token-usage meter for the macOS menu bar.
-
-```bash
-brew install --cask HechoLP/tap/codexmeter
+```sh
+brew install --cask dlfkdLR/tap/coderim
 ```
 
-The current preview is ad-hoc signed and not notarized by Apple. Homebrew verifies the published ZIP with the Cask's SHA-256 checksum, but macOS blocks the first launch until quarantine is removed from this app:
+### Upgrade from CodexMeter
 
-```bash
-xattr -dr com.apple.quarantine /Applications/CodexMeter.app
-open /Applications/CodexMeter.app
+```sh
+brew update
+brew migrate --cask dlfkdLR/tap/codexmeter
+brew upgrade --cask --greedy dlfkdLR/tap/coderim
 ```
 
-Run the `xattr` command only after installing the Cask from this Tap. It applies to `/Applications/CodexMeter.app` only.
+The cask rename retains installation history and replaces the old app with
+CodeRim.app. Existing settings, saved accounts and usage history remain intact.
+If an in-app update already installed the same version under the old filename,
+use `brew reinstall --cask dlfkdLR/tap/coderim` to normalize the app path.
 
-Update or uninstall with standard Homebrew commands:
+### First launch
 
-```bash
-brew upgrade --cask codexmeter
-brew uninstall --cask codexmeter
+The app is ad-hoc signed and not notarized by Apple. Homebrew verifies the
+published archive against the cask SHA-256 checksum. After verifying this source:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/CodeRim.app
+open /Applications/CodeRim.app
 ```
 
-Releases and checksums are published in [CodexMeter-Releases](https://github.com/HechoLP/CodexMeter-Releases/releases).
+The command applies only to the installed CodeRim app. Use Settings → Diagnostics
+→ Install CLI to enable `coderim` in `~/.local/bin`.
+
+```sh
+brew upgrade --cask --greedy dlfkdLR/tap/coderim
+brew uninstall --cask dlfkdLR/tap/coderim
+```
+
+[Source, releases and checksums](https://github.com/dlfkdLR/CodexMeter)
