@@ -1,6 +1,6 @@
 cask "coderim" do
-  version "2.1.2"
-  sha256 "73c25fb4eedd67727a9663a7a9d9f0c71ba4ee87d0588cb39082bc5ceb11e575"
+  version "2.1.3"
+  sha256 "29b10a6d9c5de8c12b020ed02e59459d241aa6a1073287abcadb2d9bdfb50181"
 
   url "https://github.com/dlfkdLR/CodeRim/releases/download/v#{version}/CodeRim-#{version}.zip"
   name "CodeRim"
