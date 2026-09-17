@@ -40,4 +40,4 @@ brew upgrade --cask --greedy dlfkdLR/tap/coderim
 brew uninstall --cask dlfkdLR/tap/coderim
 ```
 
-[Source, releases and checksums](https://github.com/dlfkdLR/CodexMeter)
+[Source, releases and checksums](https://github.com/dlfkdLR/CodeRim)

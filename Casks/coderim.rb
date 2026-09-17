@@ -2,10 +2,10 @@ cask "coderim" do
   version "2.1.0"
   sha256 "4d2527ea312ab71537738f4ea89a571436134209a8d704af165cbc8c16a8f037"
 
-  url "https://github.com/dlfkdLR/CodexMeter/releases/download/v#{version}/CodeRim-#{version}.zip"
+  url "https://github.com/dlfkdLR/CodeRim/releases/download/v#{version}/CodeRim-#{version}.zip"
   name "CodeRim"
   desc "Coding-assistant usage limits, local token history, CLI and widgets"
-  homepage "https://github.com/dlfkdLR/CodexMeter"
+  homepage "https://github.com/dlfkdLR/CodeRim"
 
   auto_updates true
   depends_on macos: :sonoma
