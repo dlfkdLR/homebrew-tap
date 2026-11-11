@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "coderim" do
-  version "2.1.35"
-  sha256 "10af5d1d822afd6c4e701882235bfea2ac4549042a2c0c91adf1a33737c89625"
+  version "2.1.36"
+  sha256 "83067e631d9ef76f22e57c809512f4b25091bae81af435e21a8df1c7e2c1e4fa"
 
   url "https://github.com/dlfkdLR/CodeRim/releases/download/v#{version}/CodeRim-#{version}.zip"
   name "CodeRim"
