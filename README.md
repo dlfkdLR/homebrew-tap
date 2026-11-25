@@ -24,16 +24,15 @@ use `brew reinstall --cask dlfkdLR/tap/coderim` to normalize the app path.
 
 ### First launch
 
-The app is ad-hoc signed and not notarized by Apple. Homebrew verifies the
-published archive against the cask SHA-256 checksum. After verifying this source:
+CodeRim 2.1.41 is signed with Developer ID and notarized by Apple. Homebrew
+verifies the published archive against the cask SHA-256 checksum. Open the app
+normally after installation:
 
 ```sh
-xattr -dr com.apple.quarantine /Applications/CodeRim.app
 open /Applications/CodeRim.app
 ```
 
-The command applies only to the installed CodeRim app. Use Settings → Diagnostics
-→ Install CLI to enable `coderim` in `~/.local/bin`.
+Use Settings → Diagnostics → Install CLI to enable `coderim` in `~/.local/bin`.
 
 ```sh
 brew upgrade --cask --greedy dlfkdLR/tap/coderim
